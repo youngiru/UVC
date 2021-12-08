@@ -1,0 +1,45 @@
+<html>
+  <body>
+    배열
+  </body>
+</html>
+<script>
+// 1,2,3,4 ...  number라는 타입으로 인식
+// "", '' 이걸로 묶이는 애들은 문자열로 string이라 함
+// 배열은 [] 이렇게 생겼고 array라 함
+// {} 이건 object라 부름
+
+
+  // let A = new Array()
+  // console.log("배열", A)   // 이러면 어레이 생성 console 위에 const A = [] 이렇게 써도 되고 이게 더 쉬우니까 이거 쓰면됨
+
+
+  let A = new Array('1', '2', '3', '4') // 또는 const A = ['1', '2', '3'] 이렇게가 더 쉬움
+  console.log("배열:", A)
+
+
+  console.log("배열:", A[0])
+  // 여기서 console.log("배열:", A[0]) 하면 배열의 일부 값을 꺼내올 수 있음.
+  // 0번째, 1번째 등으로 이해하면 됨. 여기서는 0 넣으면 1나오는거
+
+
+  A.push('4')  //4번째 인덱스에 4가 추가됨 푸시는 맨마지막에 넣는거
+  console.log(A)
+  A.pop() //팝은 맨마지막부분부터 삭제
+  console.log(A)
+
+
+  A[0] = '2'  // 0번째 인덱스를 2로 바꿔버림
+  console.log(A)
+
+
+  
+  const B = ['apple', 'samsung', 'xiaomi']  //배열 새로 만들고
+  const C = ['1', '2', '3'] // 배열 만들고
+  const D = B.concat(C)   // 배열 B랑 C를 합쳐주는거
+  console.log(D)
+  // (6) ['apple', 'samsung', 'xiaomi', '1', '2', '3'] 이렇게 나옴
+
+  
+  
+</script>
